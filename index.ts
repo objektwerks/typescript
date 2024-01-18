@@ -17,6 +17,12 @@ const _undefined: undefined = undefined
 const _null: null = null
 log(`avoid undefined: ${_undefined} and null: ${_null}`)
 
+const person: { name: string, age: number } = {
+  name: "Fred Flintstone",
+  age: 24
+}
+log(`object type: ${JSON.stringify(person)}`)
+
 log("\n*** Arrays ***")
 const letters: string[] = ['a', 'b', 'c']
 letters.push('d')
@@ -28,4 +34,3 @@ log(`immutable array: ${numbers}`)
 log("\n*** Tuples ***")
 const tuple: readonly [number, boolean, string] = [1, true, 'string']
 log(`immutable tuple: ${tuple}`) // don't use mutable tuples
-
