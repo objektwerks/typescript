@@ -18,7 +18,7 @@ Build
 >Runs compile and lint.
 1. npm run build
 
-Run
+App
 ---
 >Runs build script and node index.
 1. npm run app
