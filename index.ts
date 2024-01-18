@@ -2,7 +2,7 @@ function log(message: string): void { console.log(message) }
 
 log("*** Hello, Typescript! ***")
 
-console.log("\n*** Types ***")
+log("\n*** Types ***")
 const explicit: string = "explicit"
 const implicit = "implicit" // or type inferred
 log("const explicit type: " + explicit)
@@ -17,7 +17,7 @@ const _undefined: undefined = undefined
 const _null: null = null
 log(`avoid undefined: ${_undefined} and null: ${_null}`)
 
-console.log("\n*** Arrays ***")
+log("\n*** Arrays ***")
 const letters: string[] = ['a', 'b', 'c']
 letters.push('d')
 log(`mutable array with d pushed: ${letters}`)
@@ -25,3 +25,7 @@ log(`mutable array with d pushed: ${letters}`)
 const numbers: readonly number[] = [1, 2, 3]
 log(`immutable array: ${numbers}`)
 
+log("\n*** Tuples ***")
+let tuple: [number, boolean, string];
+tuple = [1, true, 'tuple']
+log(`tuple: ${tuple}`)
