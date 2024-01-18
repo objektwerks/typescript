@@ -16,3 +16,7 @@ Update
 Build
 -----
 1. npm run build
+
+Run
+---
+1. node index
