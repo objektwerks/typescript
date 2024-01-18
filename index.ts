@@ -7,6 +7,6 @@ console.log("const explicit type: " + explicit)
 console.log("const implicit type: " + implicit)
 
 let number = 3
-console.log("let number squared " + (number * number))
+console.log(`let number (${number}) squared: ${number * number}`)
 number = 4
-console.log("let number cubed: " + (number * number * number))
+console.log(`let number (${number}) cubed: ${number * number * number}`)
