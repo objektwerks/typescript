@@ -16,3 +16,8 @@ log(`let number (${number}) edited and cubed: ${number * number * number}`)
 const _undefined: undefined = undefined
 const _null: null = null
 log(`avoid undefined: ${_undefined} and null: ${_null}`)
+
+console.log("\n*** Collections ***")
+const numbers = [1, 2, 3]
+log(`array: ${numbers}`)
+
