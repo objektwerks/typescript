@@ -3,5 +3,10 @@ console.log("*** Hello, Typescript! ***")
 console.log("*** Types ***")
 const explicit: string = "explicit"
 const implicit = "implicit" // or type inferred
-console.log("explicit type: " + explicit)
-console.log("implicit type: " + implicit)
+console.log("const explicit type: " + explicit)
+console.log("const implicit type: " + implicit)
+
+let number = 3
+console.log("let number squared " + (number * number))
+number = 4
+console.log("let number cubed: " + (number * number * number))
