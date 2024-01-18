@@ -7,7 +7,7 @@
   "author": "Objektwerks",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/objektwerks/work.order.shared.git"
+    "url": "git+https://github.com/objektwerks/typescript.git"
   },
   "type": "module",
   "main": "index.ts",
