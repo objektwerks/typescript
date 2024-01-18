@@ -17,7 +17,7 @@ const _undefined: undefined = undefined
 const _null: null = null
 log(`avoid undefined: ${_undefined} and null: ${_null}`)
 
-console.log("\n*** Collections ***")
+console.log("\n*** Arrays ***")
 const letters: string[] = ['a', 'b', 'c']
 letters.push('d')
 log(`mutable array with d pushed: ${letters}`)
