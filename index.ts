@@ -26,5 +26,6 @@ const numbers: readonly number[] = [1, 2, 3]
 log(`immutable array: ${numbers}`)
 
 log("\n*** Tuples ***")
-const tuple: [number, boolean, string] = [1, true, 'string']
-log(`tuple: ${tuple}`)
+const tuple: readonly [number, boolean, string] = [1, true, 'string']
+log(`immutable tuple: ${tuple}`) // don't use mutable tuples
+
