@@ -12,3 +12,7 @@ let number = 3
 log(`let number (${number}) squared: ${number * number}`)
 number = 4
 log(`let number (${number}) edited and cubed: ${number * number * number}`)
+
+const _undefined: undefined = undefined
+const _null: null = null
+log(`avoid undefined: ${_undefined} and null: ${_null}`)
