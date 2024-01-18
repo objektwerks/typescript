@@ -18,6 +18,10 @@ const _null: null = null
 log(`avoid undefined: ${_undefined} and null: ${_null}`)
 
 console.log("\n*** Collections ***")
+const letters: string[] = ['a', 'b', 'c']
+letters.push('d')
+log(`mutable array with d pushed: ${letters}`)
+
 const numbers: readonly number[] = [1, 2, 3]
-log(`array: ${numbers}`)
+log(`immutable array: ${numbers}`)
 
