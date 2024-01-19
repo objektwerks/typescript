@@ -159,3 +159,9 @@ class Box<T> {
 }
 const box = new Box<number>(1)
 log(`generic type for box: ${JSON.stringify(box)}`)
+
+function identity<T>(arg: T): T {
+  return arg
+}
+const id = identity("identity")
+log(`generic type for identity function: ${JSON.stringify(id)}`)
