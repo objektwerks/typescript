@@ -1,3 +1,5 @@
+export {}
+
 function log(message: string): void { console.log(message) }
 
 log("*** Hello, Typescript! ***")
@@ -102,6 +104,13 @@ function add(x: number, y: number, z?: number): number {
 log(`function multiple (2 * 3): ${multiply(2, 3)}`)
 log(`function add with optional parameter (1, 2): ${add(1, 2)}`)
 log(`function add with optional parameter (1, 2, 3): ${add(1, 2, 3)}`)
+
+log("\n*** Async / Await Function ***")
+async function sqrt(x: number): Promise<number> {
+  return Math.sqrt(x)
+}
+const value = await sqrt(4)
+log(`async function sqrt with await: ${value}`)
 
 log("\n*** Class ***")
 class User {
