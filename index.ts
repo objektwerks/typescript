@@ -133,11 +133,18 @@ class Animal {
   constructor(kind: string) {
     this.kind = kind
   }
+  toString(): string {
+    return `animal with no kind`
+  }
 }
 class Dog extends Animal {
   constructor(kind: string) {
     super(kind)
   }
+  override toString(): string {
+    return `dog with kind: ${this.kind}`
+  }
 }
 const dog = new Dog('dog')
 log(`class for dog extends animal: ${JSON.stringify(dog)}`)
+log(`class for dog toString: ${dog.toString()}`)
