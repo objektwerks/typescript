@@ -122,6 +122,12 @@ log(`function multiple (2 * 3): ${multiply(2, 3)}`)
 log(`function add with optional parameter (1, 2): ${add(1, 2)}`)
 log(`function add with optional parameter (1, 2, 3): ${add(1, 2, 3)}`)
 
+log("\n*** Higher Order Function ***")
+function greet(fn: (message: string) => void, name: string) {
+  fn(`Greetings: ${name}`)
+}
+greet(log, 'Fred Flintstone')
+
 log("\n*** Async / Await Function ***")
 async function sqrt(x: number): Promise<number> {
   return Math.sqrt(x)
