@@ -17,6 +17,7 @@ const _undefined: undefined = undefined
 const _null: null = null
 log(`avoid undefined: ${_undefined} and null: ${_null}`)
 
+log("\n*** Object Type ***")
 const person: { name: string, age: number } = {
   name: "Fred Flintstone",
   age: 24
