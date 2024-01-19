@@ -189,3 +189,10 @@ const nameAgeRecord: Record<string, number> = { // equivalent to { [key: string]
   'Barney Rubble': 21
 } // Unlike a Java record, mutliple key-value pairs can be provided.
 log(`record type: ${JSON.stringify(nameAgeRecord)}`)
+
+log("\n*** Readonly Type ***")
+const readonly: Readonly<Point> = { // makes type readonly
+  x: 5,
+  y: 6
+}
+log(`readonly type for point: ${JSON.stringify(readonly)}`)
