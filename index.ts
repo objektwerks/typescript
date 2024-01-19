@@ -34,3 +34,11 @@ log(`immutable array: ${numbers}`)
 log("\n*** Tuples ***")
 const tuple: readonly [number, boolean, string] = [1, true, 'string']
 log(`immutable tuple: ${tuple}`) // don't use mutable tuples
+
+log("\n*** Enum ***")
+enum RGB { // init values must be unqiue, but why?
+  red = 0,
+  green = 1,
+  blue = 2
+}
+log(`RGB(${RGB.red}, ${RGB.green}, ${RGB.blue})`)
