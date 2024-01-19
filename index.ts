@@ -32,11 +32,11 @@ log(`union type for string: ${code}`)
 code = 123
 log(`union type for number: ${code}`)
 
-function displayType(code: (number | string)) {
-  if(typeof(code) === "number")
-    log('union type code is number.')
-  else if(typeof(code) === "string")
+function displayType(code: (string | number)) {
+  if(typeof(code) === "string")
     log('union type code is string.')
+  else if(typeof(code) === "number")
+    log('union type code is number.')
 }
 displayType(123)
 displayType("abc")
