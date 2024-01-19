@@ -25,4 +25,5 @@ App
 
 Resources
 ---------
+* [Typescript Documentation](https://www.typescriptlang.org/docs/)
 * [Work Order](https://github.com/objektwerks/work.order)
