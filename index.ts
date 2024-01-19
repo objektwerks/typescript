@@ -165,3 +165,13 @@ function identity<T>(arg: T): T {
 }
 const id = identity("identity")
 log(`generic type for identity function: ${JSON.stringify(id)}`)
+
+log("\n*** Partial Type ***")
+interface Point {
+  x: number
+  y: number
+}
+const partial: Partial<Point> = {} // Partialallows x and y to be optional
+partial.x = 10
+partial.y = 20
+log(`partial type for partial: ${JSON.stringify(partial)}`)
