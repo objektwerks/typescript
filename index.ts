@@ -2,7 +2,7 @@ function log(message: string): void { console.log(message) }
 
 log("*** Hello, Typescript! ***")
 
-log("\n*** Simple Types ***")
+log("\n*** Simple Type ***")
 const explicit: string = "explicit"
 const implicit = "implicit" // or type inferred
 log("const explicit type: " + explicit)
@@ -13,7 +13,7 @@ log(`let number (${number}) squared: ${number * number}`)
 number = 4
 log(`let number (${number}) edited and cubed: ${number * number * number}`)
 
-log("\n*** Undefined and Null Types ***")
+log("\n*** Undefined and Null Type ***")
 const _undefined: undefined = undefined
 const _null: null = null
 log(`avoid undefined: ${_undefined} and null: ${_null}`)
@@ -49,7 +49,7 @@ log(`mutable array with d pushed: ${letters}`)
 const numbers: readonly number[] = [1, 2, 3]
 log(`immutable array: ${numbers}`)
 
-log("\n*** Tuples ***")
+log("\n*** Tuple ***")
 const tuple: readonly [number, boolean, string] = [1, true, 'string']
 log(`immutable tuple: ${tuple}`) // don't use mutable tuples
 
@@ -92,7 +92,7 @@ const rectangle: Rectangle = {
 }
 log(`interface for rectangle: ${JSON.stringify(rectangle)}`)
 
-log("\n*** Functions ***")
+log("\n*** Function ***")
 function multiply(x: number, y: number): number {
   return x * y
 }
