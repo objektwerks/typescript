@@ -43,7 +43,8 @@ enum RGB { // immutable values
   green = 1,
   blue = 2
 }
-log(`enum for RGB: ${JSON.stringify(RGB)}`)
+log(`enum for RGB: ${JSON.stringify(RGB)}`) // value, key - duplicated
+log(`enum for RGB: ${Object.keys(RGB)}`) // values, keys
 
 log("\n*** Type Alias ***")
 type CarYear = number
