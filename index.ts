@@ -44,6 +44,22 @@ enum RGB { // immutable values
 log(`RGB(${RGB.red}, ${RGB.green}, ${RGB.blue})`)
 
 log("\n*** Type Alias ***")
-
+type CarYear = number
+type CarType = string
+type CarModel = string
+type Car = {
+  year: CarYear,
+  type: CarType,
+  model: CarModel
+}
+const carYear: CarYear = 2001
+const carType: CarType = "Boxster"
+const carModel: CarModel = "Porsche"
+const car: Car = {
+  year: carYear,
+  type: carType,
+  model: carModel
+}
+log(`type alias: ${JSON.stringify(car)}`)
 
 log("\n*** Interface ***")
