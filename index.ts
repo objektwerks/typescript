@@ -148,3 +148,14 @@ class Dog extends Animal {
 const dog = new Dog('dog')
 log(`class for dog extends animal: ${JSON.stringify(dog)}`)
 log(`class for dog toString: ${dog.toString()}`)
+
+log("\n*** Generic Type ***")
+class Box<T> {
+  item: T
+
+  constructor(item: T) {
+    this.item = item
+  }
+}
+const box = new Box<number>(1)
+log(`generic type for box: ${JSON.stringify(box)}`)
