@@ -171,7 +171,14 @@ interface Point {
   x: number
   y: number
 }
-const partial: Partial<Point> = {} // Partialallows x and y to be optional
-partial.x = 10
-partial.y = 20
-log(`partial type for partial: ${JSON.stringify(partial)}`)
+const partial: Partial<Point> = {} // Partial allows x and y to be optional
+partial.x = 1
+partial.y = 2
+log(`partial type for point: ${JSON.stringify(partial)}`)
+
+log("\n*** Required Type ***")
+const required: Required<Point> = { // Required requires x and y to be initialized
+  x: 3,
+  y: 4,
+}
+log(`required type for point: ${JSON.stringify(required)}`)
