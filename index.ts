@@ -182,3 +182,10 @@ const required: Required<Point> = { // Required requires x and y to be initializ
   y: 4,
 }
 log(`required type for point: ${JSON.stringify(required)}`)
+
+log("\n*** Record Type ***")
+const nameAgeRecord: Record<string, number> = { // equivalent to { [key: string]: number }
+  'Fred Flintstone': 24,
+  'Barney Rubble': 21
+} // Unlike a Java record, mutliple key-value pairs can be provided.
+log(`record type: ${JSON.stringify(nameAgeRecord)}`)
