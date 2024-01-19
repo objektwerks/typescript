@@ -91,3 +91,14 @@ const rectangle: Rectangle = {
   width: 20
 }
 log(`interface for rectangle: ${JSON.stringify(rectangle)}`)
+
+log("\n*** Functions ***")
+function multiply(x: number, y: number): number {
+  return x * y
+}
+function add(x: number, y: number, z?: number): number {
+  return x + y + (z || 0)
+}
+log(`function multiple (2 * 3): ${multiply(2, 3)}`)
+log(`function add with optional parameter (1, 2): ${add(1, 2)}`)
+log(`function add with optional parameter (1, 2, 3): ${add(1, 2, 3)}`)
