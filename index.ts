@@ -126,4 +126,18 @@ class Square implements Shape {
   }
 }
 const square = new Square(2)
-log(`class for square: ${JSON.stringify(square)}`)
+log(`class for square implements shape: ${JSON.stringify(square)}`)
+
+class Animal {
+  kind: string
+  constructor(kind: string) {
+    this.kind = kind
+  }
+}
+class Dog extends Animal {
+  constructor(kind: string) {
+    super(kind)
+  }
+}
+const dog = new Dog('dog')
+log(`class for dog extends animal: ${JSON.stringify(dog)}`)
