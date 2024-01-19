@@ -102,3 +102,13 @@ function add(x: number, y: number, z?: number): number {
 log(`function multiple (2 * 3): ${multiply(2, 3)}`)
 log(`function add with optional parameter (1, 2): ${add(1, 2)}`)
 log(`function add with optional parameter (1, 2, 3): ${add(1, 2, 3)}`)
+
+log("\n*** Class ***")
+class User {
+  pin: string
+  constructor(pin: string) {
+    this.pin = pin
+  }
+}
+const user = new User("1a2b3c");
+log(`class for user: ${JSON.stringify(user)}`)
