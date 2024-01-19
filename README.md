@@ -22,3 +22,7 @@ App
 ---
 >Runs build script and node index.
 1. npm run app
+
+Resources
+---------
+* [Work Order](https://github.com/objektwerks/work.order)
