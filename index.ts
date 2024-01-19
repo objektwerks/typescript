@@ -112,3 +112,18 @@ class User {
 }
 const user = new User("1a2b3c");
 log(`class for user: ${JSON.stringify(user)}`)
+
+interface Shape {
+  area: () => number
+}
+class Square implements Shape {
+  side: number
+  constructor(side: number) {
+    this.side = side
+  }
+  area(): number {
+    return this.side * this.side
+  }
+}
+const square = new Square(2)
+log(`class for square: ${JSON.stringify(square)}`)
