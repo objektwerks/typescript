@@ -42,3 +42,8 @@ enum RGB { // immutable values
   blue = 2
 }
 log(`RGB(${RGB.red}, ${RGB.green}, ${RGB.blue})`)
+
+log("\n*** Type Alias ***")
+
+
+log("\n*** Interface ***")
