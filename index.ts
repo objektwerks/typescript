@@ -36,7 +36,7 @@ const tuple: readonly [number, boolean, string] = [1, true, 'string']
 log(`immutable tuple: ${tuple}`) // don't use mutable tuples
 
 log("\n*** Enum ***")
-enum RGB { // init values must be unqiue, but why?
+enum RGB { // immutable values
   red = 0,
   green = 1,
   blue = 2
