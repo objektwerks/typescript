@@ -107,6 +107,10 @@ const whale: Whale = {
 }
 log(`type for mammal > whale: ${JSON.stringify(whale)}`)
 
+log("\n*** Type Coercion ***")
+const n = "1" as any as number // as any remove compiler error
+log(`type coercion of string: ${n}`)
+
 log("\n*** Function ***")
 function multiply(x: number, y: number): number {
   return x * y
