@@ -84,7 +84,7 @@ const car: Car = {
 log(`type alias for car: ${JSON.stringify(car)}`)
 
 log("\n*** Interface ***")
-interface Rectangle {
+interface Rectangle { // extensible
   height: number,
   width: number
 }
@@ -93,6 +93,19 @@ const rectangle: Rectangle = {
   width: 20
 }
 log(`interface for rectangle: ${JSON.stringify(rectangle)}`)
+
+log("\n*** Type ***")
+type Mammal = { // not extensible
+  kind: string
+}
+type Whale = Mammal & { 
+  food: string
+}
+const whale: Whale = {
+  kind: "sperm",
+  food: "shrimp"
+}
+log(`type for mammal > whale: ${JSON.stringify(whale)}`)
 
 log("\n*** Function ***")
 function multiply(x: number, y: number): number {
