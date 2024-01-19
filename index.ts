@@ -21,7 +21,7 @@ const person: { name: string, age: number } = {
   name: "Fred Flintstone",
   age: 24
 }
-log(`object type: ${JSON.stringify(person)}`)
+log(`object type for person: ${JSON.stringify(person)}`)
 
 log("\n*** Arrays ***")
 const letters: string[] = ['a', 'b', 'c']
@@ -41,7 +41,7 @@ enum RGB { // immutable values
   green = 1,
   blue = 2
 }
-log(`RGB(${RGB.red}, ${RGB.green}, ${RGB.blue})`)
+log(`enum for RGB: ${JSON.stringify(RGB)}`)
 
 log("\n*** Type Alias ***")
 type CarYear = number
@@ -60,6 +60,15 @@ const car: Car = {
   type: carType,
   model: carModel
 }
-log(`type alias: ${JSON.stringify(car)}`)
+log(`type alias for car: ${JSON.stringify(car)}`)
 
 log("\n*** Interface ***")
+interface Rectangle {
+  height: number,
+  width: number
+}
+const rectangle: Rectangle = {
+  height: 10,
+  width: 20
+}
+log(`interface for rectangle: ${JSON.stringify(rectangle)}`)
