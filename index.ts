@@ -32,6 +32,15 @@ log(`union type for string: ${code}`)
 code = 123
 log(`union type for number: ${code}`)
 
+function displayType(code: (number | string)) {
+  if(typeof(code) === "number")
+    log('union type code is number.')
+  else if(typeof(code) === "string")
+    log('union type code is string.')
+}
+displayType(123)
+displayType("abc")
+
 log("\n*** Arrays ***")
 const letters: string[] = ['a', 'b', 'c']
 letters.push('d')
