@@ -25,6 +25,13 @@ const person: { name: string, age: number } = {
 }
 log(`object type for person: ${JSON.stringify(person)}`)
 
+log("\n*** Union Type ***")
+let code: (string | number)
+code = "abc"
+log(`union type for string: ${code}`)
+code = 123
+log(`union type for number: ${code}`)
+
 log("\n*** Arrays ***")
 const letters: string[] = ['a', 'b', 'c']
 letters.push('d')
