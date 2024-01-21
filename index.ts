@@ -229,11 +229,6 @@ const readonly: Readonly<Point> = { // makes type readonly
 }
 log(`readonly type for point: ${JSON.stringify(readonly)}`)
 
-/*
-def sum(xs: List[Int], acc: Int = 0): Int = xs match
-  case Nil => acc
-  case head :: tail => sum(tail, acc + head)
-*/
 log("\n*** Recursion ***")
 function sum(xs: number[], acc: number = 0): number {
   if (xs.length == 0) return acc
