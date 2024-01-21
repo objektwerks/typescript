@@ -228,3 +228,5 @@ const readonly: Readonly<Point> = { // makes type readonly
   y: 6
 }
 log(`readonly type for point: ${JSON.stringify(readonly)}`)
+
+log("\n*** Recursion ***")
